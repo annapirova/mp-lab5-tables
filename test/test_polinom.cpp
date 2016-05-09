@@ -4,9 +4,9 @@
 // тесты мономов и полиномов
 
 TEST(Tables, can_create) {
-	NodeTable t;
-	/*PList l;
+	HashTable t;
+	PList l;
 	l.Insert(Monom(1,111));
 	t.Insert("a",&l);
-	EXPECT_EQ(1,1);*/
+	EXPECT_EQ(t.GetNode("a")->head->next->data.deg,111);
 }
