@@ -15,7 +15,7 @@ HashTable::HashTable(){
 }
 
 HashTable::~HashTable(){
-	cout<<"сработал";
+	//cout<<"сработал";
 	delete []flag;
 	for(int i=1;i<max_size;i++)
 		delete []data[i];

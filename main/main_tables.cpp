@@ -15,7 +15,7 @@ void main(){
 	tabs.Insert("a",&l1);
 	tabs.Insert("c",&l3);
 	tabs.Insert("d",&l4);
-	cout<<tabs<<endl;
+	cout<<"Сортированная таблица:"<<endl<<tabs<<endl<<endl<<"Хэш таблица:"<<endl;
 	
 	HashTable t;
 	t.Insert("bc",&l1);
@@ -23,7 +23,7 @@ void main(){
 	t.Insert("k",&l2);
 	t.Insert("c",&l3);
 	t.Insert("d",&l4);
-	t.Delete("bc");
+	//t.Delete("bc");
 	//cout<<t.GetNode("a")->head->next->data.deg<<endl;
 	t.print();
 	getch();

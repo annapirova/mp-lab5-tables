@@ -106,7 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\test\test_main.cpp" />
-    <ClCompile Include="..\..\..\test\test_polinom.cpp" />
+    <ClCompile Include="..\..\..\test\test_tables.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

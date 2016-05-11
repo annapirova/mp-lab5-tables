@@ -41,6 +41,7 @@ private:
 	void Mem();
 	int Find(string key);
 public:
+	int search(string key){return Find(key);} //для тестов
 	SortedTable();
 	~SortedTable();
 	int GetKol(){return kol;}
@@ -72,3 +73,4 @@ public:
 	friend ostream& operator<<(ostream &out,HashTable t);
 	void print();
 };
+
