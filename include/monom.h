@@ -1,9 +1,10 @@
 // класс или структура Монома (coef-коэффициент, deg-целая свернутая степень)
 #pragma once
-
 #include <iostream>
 #include <locale>
 #include <conio.h>
+#include <string>
+#include <cstdio>
 using namespace std;
 
 class Monom {

@@ -68,9 +68,11 @@
     <ClCompile Include="Source Files\NodeTable.cpp" />
     <ClCompile Include="Source Files\SortedTable.cpp" />
     <ClCompile Include="Source Files\HashTable.cpp" />
+    <ClCompile Include="Source Files\treetable.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header Files\tables.h" />
+    <ClInclude Include="Header Files\treetable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

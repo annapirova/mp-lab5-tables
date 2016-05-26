@@ -24,9 +24,15 @@
     <ClCompile Include="Source Files\HashTable.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
+    <ClCompile Include="Source Files\treetable.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header Files\tables.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\treetable.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>

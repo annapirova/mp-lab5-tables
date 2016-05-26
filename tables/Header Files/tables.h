@@ -1,7 +1,4 @@
 #pragma once
-#include <iostream>
-#include <string>
-#include <cstdio>
 #include "polinom.h"
 
 using namespace std;
