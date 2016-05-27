@@ -158,12 +158,12 @@ void TreeTable:: Insert (NodeTree &t)
 		}
 		if(prev->key>t.key)
 		{
-			prev->Left=&t;//&t
+			prev->Left=new NodeTree(t);//&t
 			prev->Left->Parent=prev;
 		}
 		else
 		{
-			prev->Right=&t;	//&t
+			prev->Right=new NodeTree(t);	//&t
 			prev->Right->Parent=prev;
 		}
 	}

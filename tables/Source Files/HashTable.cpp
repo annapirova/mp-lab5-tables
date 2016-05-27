@@ -50,10 +50,10 @@ void HashTable::Insert(string key, PList* p)
 		Mem();
 	}
 	if(hashfunc(data[hash][0].GetKey())==hash)
-	{
+	{	
 		data[hash][flag[hash]]=NodeTable(key,p);
 		flag[hash]++;
-	}
+	} 
 	else{
 		data[hash][0]=NodeTable(key,p);
 		flag[hash]++;}

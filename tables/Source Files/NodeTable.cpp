@@ -2,12 +2,12 @@
 
 NodeTable::NodeTable() {
 	name = "";
-	element = new PList;
+	element = NULL;
 }
 
 NodeTable::NodeTable(const NodeTable& t) {
 	name = t.GetKey();
-	element = new PList(*t.GetElement());
+	element =t.GetElement(); //new PList(*t.GetElement());
 }
 
 NodeTable::NodeTable(string name_, PList* elem) {

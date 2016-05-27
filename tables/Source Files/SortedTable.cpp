@@ -16,7 +16,7 @@ SortedTable::SortedTable()
 
 SortedTable::~SortedTable()
 {
-	delete[] data;	
+	//delete []data;	
 }
 
 void SortedTable::Mem()
@@ -96,12 +96,16 @@ void SortedTable::Insert(string key, PList* p)
 void SortedTable::Delete(string key)
 {
 	int pos = Find(key);
+	if(pos==-1)
+		cout<<"Запись не найдена"<<endl;
+	else{
 	for (int i = pos; i < kol-1; i++)
 	{
 		data[i] = data[i + 1];
 	}
 	data[kol - 1] = NodeTable("",NULL);
 	kol--;
+	}
 }
 
 PList* SortedTable::GetNode(string key)
@@ -117,6 +121,7 @@ std :: ostream& operator<<(ostream &out, SortedTable t){
 	
 	for (int i = 0; i < t.GetMaxSize(); i++)
 	{
+		if(t.GetData(i).GetKey()!="")
 		out<<t.GetData(i).GetKey()<<";";
 	}
 	return out;
